@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
       
       <div className="footer-bottom">
-        <p>© 2025 <a href="https://www.BalajiKnittwell.com">BalajiKnittwell.com</a></p>
+        <p>© 2025 <a href="https://www.BalajiKnittwell.com">BalajiKnittwell.All Rights Reserved.</a></p>
         <div className="footer-links">
           <a href="/terms">Terms of Service</a>
           <a href="/privacy">Privacy Policy</a>

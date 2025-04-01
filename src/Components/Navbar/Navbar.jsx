@@ -45,9 +45,9 @@ export const Navbar = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Collar</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Cuffs</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Ribs</Dropdown.Item>
+                  <Dropdown.Item href="/collar">Collar</Dropdown.Item>
+                  <Dropdown.Item href="/cuffs">Cuffs</Dropdown.Item>
+                  <Dropdown.Item href="/ribs">Ribs</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </li>
