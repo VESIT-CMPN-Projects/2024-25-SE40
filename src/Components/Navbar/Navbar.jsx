@@ -73,7 +73,7 @@ export const Navbar = () => {
       </div>
 
       {/* Lower Navbar with Search Bar */}
-      <div className="searchdiv">
+      {/* <div className="searchdiv">
         <div className="search-container">
           <input
             type="text"
@@ -82,7 +82,7 @@ export const Navbar = () => {
           />
           <button className="search-button">🔍</button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -136,6 +136,21 @@ p {
     transition: opacity 0.3s ease-in-out;
 }
 
+.details-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  
+  .details-button:hover {
+    background-color: #0056b3;
+  }
+  
 .custom-card:hover::before {
     opacity: 1;
 }

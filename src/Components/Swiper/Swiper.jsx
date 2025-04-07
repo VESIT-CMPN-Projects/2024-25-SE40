@@ -6,16 +6,15 @@ import "swiper/css/pagination";
 import "./Swiper.css";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 
-// Import Images
-import image1 from "../Assets/image1.png";
-import image2 from "../Assets/image2.png";
-import yarnimage1 from "../Assets/yarnimage1.png";
-import yarnimage2 from "../Assets/yarnimage2.png"
-import yarnimage3 from "../Assets/yarnimage3.png"
-
+// Import Videos
+import video1 from "../Assets/video1.mp4";
+import video2 from "../Assets/video1.mp4";
+import video3 from "../Assets/video1.mp4";
 
 const ThreeDSwiper = () => {
-  const swiperRef = useRef(null); // Ref for Swiper
+  const swiperRef = useRef(null);
+
+  const videos = [video1, video2, video3];
 
   return (
     <Swiper
@@ -36,14 +35,14 @@ const ThreeDSwiper = () => {
       navigation={true}
       modules={[EffectCoverflow, Pagination]}
       className="mySwiper"
-      onSwiper={(swiper) => (swiperRef.current = swiper)} // Store swiper instance
+      onSwiper={(swiper) => (swiperRef.current = swiper)}
     >
-      {[image1, image2, yarnimage1, yarnimage2, yarnimage3].map((image, index) => (
-        <SwiperSlide key={index} onClick={(e) => {
-          const clickedIndex = [...e.target.closest('.swiper-wrapper').children].indexOf(e.target.closest('.swiper-slide'));
-          swiperRef.current.slideToLoop(clickedIndex);
-        }}>
-          <img src={image} alt={`Slide ${index + 1}`} />
+      {videos.map((videoSrc, index) => (
+        <SwiperSlide key={index} onClick={() => swiperRef.current.slideTo(index)}>
+          <video className="swiper-slide-video" controls autoPlay loop muted>
+            <source src={videoSrc} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </SwiperSlide>
       ))}
     </Swiper>

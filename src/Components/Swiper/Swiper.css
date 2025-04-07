@@ -34,3 +34,11 @@
 .swiper-wrapper {
     width: 100%;
 }
+.swiper-slide-video {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Adjust based on design */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
