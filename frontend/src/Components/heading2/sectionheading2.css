@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    margin: 70px auto; 
+    /* text-transform: capitalize; */
+    font-family: 'Dancing Script', cursive; 
+    width: 100%;
+}
+
+.section-heading h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive; 
+
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #666;
+    font-family: lato;
+}
