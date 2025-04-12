@@ -1,0 +1,32 @@
+/* Make the Landbot chat widget sticky */
+#landbot-container {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important;
+    width: 350px !important; /* Adjust as per your design */
+    height: 500px !important;
+  }
+  
+  /* Ensure the chat bubble is always visible */
+  .landbot-message {
+    display: block !important;
+  }
+  
+  /* Customize the chat bubble icon (optional) */
+  #landbot-launcher {
+    background-color: #007bff !important; /* Change color */
+    border-radius: 50% !important;
+    width: 60px !important;
+    height: 60px !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  /* Chat window design */
+  #landbot-iframe {
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3) !important;
+  }
+  
