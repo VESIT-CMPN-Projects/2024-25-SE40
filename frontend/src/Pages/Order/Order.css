@@ -1,0 +1,99 @@
+
+.custom-collar-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .customized-card {
+    background-color: white;
+    width: 100%;
+    max-width: 700px; 
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  
+  .custom-card h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .description {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input[type="file"] {
+    width: 100%;
+  }
+  
+  .form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .preview-section {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  .image-preview {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .send-button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(6, 6, 92);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-button:hover {
+    background-color: rgb(6, 6, 92);
+  }
+  @media (max-width: 600px) {
+    .custom-card {
+      padding: 1.5rem;
+    }
+  
+    .custom-card h2 {
+      font-size: 20px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  }
+  

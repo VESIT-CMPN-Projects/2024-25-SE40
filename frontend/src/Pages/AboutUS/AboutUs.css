@@ -1,0 +1,123 @@
+.about-us-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.about-hero-section {
+  background: linear-gradient(to right, rgba(0, 0, 139, 0.7), rgba(255, 0, 0, 0.7)),
+              url('../Assets2/company.jpeg') center/cover no-repeat;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.about-hero-overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-hero-overlay p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Success Section */
+.success-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.highlight-title {
+  color: #003366; /* deep blue */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.success-section p {
+  
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  
+  
+  
+}
+
+/* Founder Profile */
+.founder-profile {
+  margin-top: 30px;
+}
+
+.founder-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+.founder-profile p{
+  padding-left: 250px;
+}
+
+/* Vision and Mission */
+.vision-mission-section {
+  padding: 60px 20px;
+  background-color: rgb(212, 212, 228);
+
+}
+
+.vision-mission-section h3 {
+  color: rgb(11, 11, 130);
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.vision-mission-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Team Section */
+.team-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+.team-card {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.team-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-card h4 {
+  margin: 10px 0 5px;
+  color: #003366;
+}
+
+.team-card p {
+  color: #888;
+  font-size: 0.95rem;
+}

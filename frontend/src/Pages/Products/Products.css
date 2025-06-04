@@ -1,0 +1,210 @@
+/* General Page Styling */
+.collar-page {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .collar-hero-modern {
+    position: relative;
+    height: 50vh;
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    overflow: hidden;
+   
+  }
+  
+  .hero-overlay {
+    z-index: 2;
+    max-width: 50%;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    padding-left: 50px;
+    margin-top: 30px;
+
+  }
+  
+  .hero-overlay p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #555;
+    padding-left: 50px;
+  }
+  
+  .collar-products h2{
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Features Section */
+  .features-section {
+    padding: 60px 20px 30px 60px;
+    background-color: #fff;
+  }
+  
+  .features-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #1e2a38;
+  }
+  
+  .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .feature-box {
+    background-color: #f0f4f8;
+    padding: 20px 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+    width: 250px;
+  }
+
+  .collar-products{
+    margin-top: 60px;
+  }
+  /* Product Cards */
+  .cards-container {
+    margin-top: 90px;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .custom-collar-card {
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  }
+  
+  .custom-collar-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  }
+  
+  .custom-collar-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .custom-collar-card .card-body {
+    padding: 20px;
+  }
+  
+  .custom-collar-card .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #2c3e50;
+  }
+  
+  .custom-collar-card .card-text {
+    color: #555;
+    margin: 10px 0;
+    font-size: 0.95rem;
+  }
+  
+  .custom-collar-card p {
+    color: rgb(18, 18, 88);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .view-button {
+    background-color: rgb(18, 18, 88);
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #2c387e;
+  }
+  
+  /* Custom Order Section */
+  .custom-order-section {
+    background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .custom-order-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-order-box h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1a237e;
+  }
+  
+  .custom-order-box p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .custom-order-box button {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: rgb(18, 18, 88);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-order-box button:hover {
+    background-color: rgb(46, 46, 159)
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .collar-hero-modern {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .hero-overlay {
+      max-width: 100%;
+    }
+  
+    .hero-image {
+      margin-top: 30px;
+      max-width: 80%;
+    }
+  
+    .features-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

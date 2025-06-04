@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Upper navbar */
+.upper {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+  background-color: white;
+}
+
+/* Logo */
+.nav-logo img {
+  width: 250px;
+}
+
+/* Navigation Menu - Desktop */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover {
+  color: gray;
+}
+
+/* Call button */
+.contact {
+  margin-left: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.call-button {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hamburger icon - hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Mobile menu (hidden by default) */
+.nav-menu-mobile {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+}
+
+.nav-menu-mobile li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-menu-mobile li a {
+  color: black;
+}
+
+/* Dropdown styling */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-toggle-custom {
+  color: black;
+  font-size: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dropdown-toggle-custom:focus,
+.dropdown-toggle-custom:active {
+  outline: none !important;
+  box-shadow: none !important;
+  color: black !important;
+}
+
+.dropdown-toggle-custom::after {
+  display: none !important;
+}
+
+.dropdown-container:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  font-size: 14px;
+  color: black;
+  padding: 8px 15px;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Hide desktop menu */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .nav-menu-mobile {
+    display: flex; /* Show when active via state */
+  }
+
+  .contact {
+    display: none; /* Optional: hide call button on mobile */
+  }
+}
